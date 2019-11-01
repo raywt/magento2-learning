@@ -5,9 +5,25 @@
  */
 
 namespace Learning\ClothingMaterial\Model\Attribute\Backend;
+use Psr\Log\LoggerInterface as PsrLoggerInterface;
 
 class Material extends \Magento\Eav\Model\Entity\Attribute\Backend\AbstractBackend
 {
+    /**
+     * @var PsrLoggerInterface
+     */
+    private $logger;
+
+    /**
+     * Material constructor.
+     *
+     * @param PsrLoggerInterface $logger
+     */
+    public function __construct(
+        PsrLoggerInterface $logger
+    ) {
+        $this->logger = $logger;
+    }
 
     /**
      * Validate
@@ -34,9 +50,10 @@ class Material extends \Magento\Eav\Model\Entity\Attribute\Backend\AbstractBacke
     public function afterSave($object)
     {
         $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
-        $logger = $this->logger->Logger();
+        //$logger = $this->logger->Logger();
         $logger = new \Zend\Log\Logger();
         $logger->addWriter($writer);
         $logger->info('Attribute saved');
+        //$this->logger->error('product saved');
     }
 }
