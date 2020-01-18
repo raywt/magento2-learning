@@ -1,0 +1,6 @@
+<h1>Parent Block</h1>
+<?php
+echo $this->getChildHtml(); // outputs all child blocks
+echo $this->getChildHtml('named_child'); // outputs named child only
+echo $this->getChildHtml('named_child'); // interestingly, a template is only output once
+?>
