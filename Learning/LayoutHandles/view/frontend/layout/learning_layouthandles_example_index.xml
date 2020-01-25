@@ -1,0 +1,16 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content">
+            <block name="rays_block"
+                class="Magento\Framework\View\Element\Text">
+                <arguments>
+                    <argument name="text" xsi:type="string">This is a test.</argument>
+                </arguments >
+            </block>
+            <block
+                template="Learning_LayoutHandles::example.phtml" 
+                class="Magento\Framework\View\Element\Template" 
+                name="learning_layouthandles_example"/>
+        </referenceContainer>
+    </body>
+</page>
