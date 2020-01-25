@@ -1,0 +1,17 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" 
+        layout="rays-empty-layout">        
+    <body>
+        <referenceContainer name="our_first_container">
+            <block 
+                template="Learning_PageLayouts::blank/content1.phtml" 
+                class="Magento\Framework\View\Element\Template" 
+                name="learning_pagelayouts_blank_content1"/>
+        </referenceContainer>
+        <referenceContainer name="our_second_container">
+            <block 
+                template="Learning_PageLayouts::blank/content2.phtml" 
+                class="Magento\Framework\View\Element\Template" 
+                name="learning_pagelayouts_blank_content2"/>
+        </referenceContainer> 
+    </body>
+</page> 

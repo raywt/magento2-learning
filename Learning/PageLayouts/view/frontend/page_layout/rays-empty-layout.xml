@@ -1,0 +1,11 @@
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <container name="our_first_container"
+                htmlTag="div"
+                htmlId="our-first-container"
+                htmlClass="first-container" />
+    <container name="our_second_container"
+                htmlTag="div"
+                htmlId="our-second-container"
+                htmlClass="second-container" />
+</layout>
