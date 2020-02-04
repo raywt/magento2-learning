@@ -1,0 +1,1 @@
+A simple example showing the basics of how to create a theme

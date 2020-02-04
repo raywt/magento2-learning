@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Learning Theme</title>
+    <parent>Magento/luma</parent>
+    <media>
+        <preview_image/>
+    </media>
+</theme>
