@@ -1,0 +1,21 @@
+<h1>Hello</h1>
+<div data-bind="scope: 'learning_knockoutjs_js_viewmodel'">
+    <p data-bind="text:helloMessage"></p>
+    <p data-bind="text:goodbyeMessage"></p>
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "learning_knockoutjs_js_viewmodel": {
+                    "component": "uiElement",
+                    "helloMessage": "Hello from the ViewModel",
+                    "goodbyeMessage": "Goodbye from the ViewModel"
+                }
+            }
+        }
+    }
+}
+</script>
