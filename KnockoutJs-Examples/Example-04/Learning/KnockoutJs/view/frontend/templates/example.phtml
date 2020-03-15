@@ -1,0 +1,33 @@
+<h1>Hello</h1>
+<div data-bind="scope: 'learning_knockoutjs_js_viewmodel'">
+
+    <!-- Render the view model html template file -->
+    <div>
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "learning_knockoutjs_js_viewmodel": {
+                    "component": "uiCollection",
+                    "children": {
+                        "child1": {
+                            "component":"uiElement",
+                            "template":"Learning_KnockoutJs/first-child"
+                        },
+                        "child2": {
+                            "component":"uiElement",
+                            "template":"Learning_KnockoutJs/second-child"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</script>

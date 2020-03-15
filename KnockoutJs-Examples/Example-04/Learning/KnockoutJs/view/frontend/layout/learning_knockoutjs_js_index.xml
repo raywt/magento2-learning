@@ -1,0 +1,7 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content">
+            <block template="Learning_KnockoutJs::example.phtml" class="Magento\Framework\View\Element\Template" name="learning_knockoutjs_js"/>
+        </referenceContainer>
+    </body>
+</page>
