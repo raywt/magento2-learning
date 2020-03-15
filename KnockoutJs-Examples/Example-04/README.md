@@ -1,6 +1,6 @@
-# Example 03
+# Example 04
 
-This example shows rendering multiple templates/view models.
+##This example shows rendering multiple templates/view models.
 
 `uiCollection` is an alias for `Magento_Ui/js/lib/core/collection`. The `uiCollection` module collects together child view models.
 
