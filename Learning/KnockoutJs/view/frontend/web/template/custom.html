@@ -1,0 +1,13 @@
+<p>It's a Hello from custom.html and a <span data-bind="text:helloMsg"></span></p>
+
+<p data-bind="text:thisMsgWillBeOverridden"></p>
+
+<p data-bind="html:thisMsgWillBeOverriddenTwice"></p>
+
+<ul data-bind="foreach:getListOfNames()">
+    <li data-bind="text:$data"></li>
+</ul>
+
+<p>The result of something is: <span data-bind="text:getSomeValue()"></span></p>
+
+<p data-bind="text: time"></p>

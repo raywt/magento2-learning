@@ -1,0 +1,46 @@
+<h1>Hello Custom View Model</h1>
+<div data-bind="scope: 'learning_knockoutjs_js_viewmodel'">
+    <!-- Render the view model html template file -->
+    <div>
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+</div>
+
+<div data-bind="scope: 'observableExample'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "learning_knockoutjs_js_viewmodel": {
+                    "component": "Learning_KnockoutJs/custom-view-model",
+                    "template": "Learning_KnockoutJs/custom",
+                    "thisMsgWillBeOverridden": "This message has been overridden",
+                    "thisMsgWillBeOverriddenTwice": "This message has been overridden",
+                    "config":{
+                        "thisMsgWillBeOverriddenTwice":"<h2>Someone else has wanted to change this message</h2>"
+                    }
+                }
+            }
+        }
+    }
+}
+</script>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "observableExample": {
+                    "component": "Learning_KnockoutJs/observable-example",
+                    "template": "Learning_KnockoutJs/observable"
+                }
+            }
+        }
+    }
+}
+</script>
